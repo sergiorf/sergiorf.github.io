@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Sergio Rodriguez Freire | Software Engineering & Architecture
+    </title>
+
+    <meta name="description"
+          content="Sergio Rodriguez Freire is a software engineering leader with 25+ years of experience across distributed systems, embedded software and performance-critical applications.">
+
+    <meta name="author"
+          content="Sergio Rodriguez Freire">
+
+    <link rel="canonical"
+          href="https://sergiorf.github.io/">
+
+    <style>
+
+        :root {
+            --text: #1f2937;
+            --muted: #6b7280;
+            --accent: #2563eb;
+            --border: #e5e7eb;
+            --background: #ffffff;
+            --soft: #f8fafc;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+
+            font-family:
+                Inter,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            color: var(--text);
+            background: var(--background);
+            line-height: 1.65;
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        header {
+            padding: 90px 0 65px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 180px;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 1px solid var(--border);
+        }
+
+        h1 {
+            margin: 0 0 14px;
+            font-size: 3.4rem;
+            line-height: 1.1;
+            letter-spacing: -0.045em;
+        }
+
+        h2 {
+            margin: 0 0 26px;
+            font-size: 1.85rem;
+            letter-spacing: -0.025em;
+        }
+
+        h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-top: 0;
+        }
+
+        .headline {
+            margin-bottom: 26px;
+            font-size: 1.3rem;
+            color: var(--muted);
+        }
+
+        .intro {
+            max-width: 780px;
+            font-size: 1.17rem;
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 22px;
+            margin-top: 28px;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 55px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            padding: 24px;
+            background: var(--soft);
+            border: 1px solid transparent;
+            border-radius: 12px;
+        }
+
+        .card:hover {
+            border-color: var(--border);
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .impact {
+            padding-left: 22px;
+            max-width: 850px;
+            font-size: 1.04rem;
+        }
+
+        .impact li {
+            margin-bottom: 15px;
+        }
+
+        .writing-category {
+            margin-top: 42px;
+        }
+
+        .writing-category:first-of-type {
+            margin-top: 0;
+        }
+
+        .category-title {
+            margin-bottom: 17px;
+            font-size: 0.9rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .article-title {
+            font-size: 1.08rem;
+            line-height: 1.4;
+        }
+
+        .article-description {
+            color: #4b5563;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            padding: 7px 13px;
+            background: var(--soft);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            font-size: 0.91rem;
+        }
+
+        footer {
+            padding: 42px 0 60px;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 700px) {
+
+            header {
+                padding-top: 55px;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-photo {
+                width: 140px;
+                height: 140px;
+                order: -1;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .headline {
+                font-size: 1.12rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "url": "https://sergiorf.github.io/",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Sergio Rodriguez Freire",
+            "url": "https://sergiorf.github.io/",
+            "image": "https://sergiorf.github.io/images/sergio-rodriguez-freire.jpg",
+            "jobTitle": "Software Engineering Leader",
+            "description": "Software engineering leader with 25+ years of experience across distributed systems, embedded software and performance-critical applications.",
+            "sameAs": [
+                "https://github.com/sergiorf",
+                "https://www.linkedin.com/in/sergio-rodriguez-freire"
+            ]
+        }
+    }
+    </script>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="container hero">
+
+        <div>
+
+            <h1>
+                Sergio Rodriguez Freire
+            </h1>
+
+            <div class="headline">
+                Software Engineering Leader ·
+                Distributed, Embedded &amp;
+                Performance-Critical Systems
+            </div>
+
+            <p class="intro">
+
+                I have spent more than 25 years building and leading
+                software across embedded systems, telecommunications,
+                industrial control, quantitative finance and distributed
+                data platforms.
+
+                I combine engineering leadership with hands-on
+                architecture and technical problem solving.
+
+            </p>
+
+            <div class="links">
+
+                <a href="https://www.linkedin.com/in/sergio-rodriguez-freire"
+                   target="_blank"
+                   rel="noopener">
+                    LinkedIn
+                </a>
+
+                <a href="https://github.com/sergiorf"
+                   target="_blank"
+                   rel="noopener">
+                    GitHub
+                </a>
+
+                <a href="#writing">
+                    Writing
+                </a>
+
+            </div>
+
+        </div>
+
+        <img
+            src="/images/sergio-rodriguez-freire.jpg"
+            alt="Sergio Rodriguez Freire"
+            class="profile-photo">
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+
+    <section>
+
+        <h2>
+            What I build
+        </h2>
+
+        <div class="grid">
+
+
+            <div class="card">
+
+                <h3>
+                    Distributed Systems
+                </h3>
+
+                <p>
+                    Event-driven and large-scale data platforms using
+                    technologies such as Kafka, Flink, AWS and distributed
+                    processing.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Performance-Critical Software
+                </h3>
+
+                <p>
+                    C++, embedded systems, telecom platforms, RF test
+                    systems, industrial automation and other
+                    hardware-facing software.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Engineering Leadership
+                </h3>
+
+                <p>
+                    Building engineering teams, setting technical
+                    direction, mentoring engineers and owning software
+                    through production.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Software Architecture
+                </h3>
+
+                <p>
+                    Scalability, reliability, performance, integration
+                    design, data contracts and modernization of complex
+                    production systems.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>
+            Selected impact
+        </h2>
+
+        <ul class="impact">
+
+            <li>
+                Grew an engineering group from 3 to approximately
+                15 people, spanning software engineering, QA and DevOps.
+            </li>
+
+            <li>
+                Architected and productionized a Kafka/Flink data platform
+                processing billions of records per week.
+            </li>
+
+            <li>
+                Built firmware and middleware for Sony digital television
+                products shipped across Europe.
+            </li>
+
+            <li>
+                Built industrial control software deployed across dozens
+                of grain-storage and transshipment sites in Brazil.
+            </li>
+
+            <li>
+                Led front-office software development for an energy
+                derivatives trading desk.
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <section id="writing">
+
+        <h2>
+            Selected writing
+        </h2>
+
+        <p>
+            I write about programming, software architecture,
+            engineering practice and the challenges of leading
+            software teams.
+        </p>
+
+
+        <!-- C++ AND PROGRAMMING LANGUAGES -->
+
+        <div class="writing-category">
+
+            <div class="category-title">
+                C++ &amp; Programming Languages
+            </div>
+
+            <div class="grid">
+
+                <div class="card">
+
+                    <h3 class="article-title">
+                        From Imperative Programming to
+                        Functional Architecture in C++
+                    </h3>
+
+                    <p class="article-description">
+                        Exploring how functional programming ideas can
+                        lead to cleaner, more composable and
+                        easier-to-reason-about C++ architectures.
+                    </p>
+
+                    <p>
+                        <a href="https://www.linkedin.com/in/sergio-rodriguez-freire/recent-activity/articles/"
+                           target="_blank"
+                           rel="noopener">
+                            View on LinkedIn →
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SOFTWARE ENGINEERING -->
+
+        <div class="writing-category">
+
+            <div class="category-title">
+                Software Engineering
+            </div>
+
+            <div class="grid">
+
+
+                <div class="card">
+
+                    <h3 class="article-title">
+                        Testing Is Worth It.
+                        The Incentives Are the Problem.
+                    </h3>
+
+                    <p class="article-description">
+                        Why teams often underinvest in testing even
+                        when everybody agrees that testing matters.
+                    </p>
+
+                    <p>
+                        <a href="https://www.linkedin.com/pulse/uncomfortable-truth-testing-sergio-rodriguez-freire-2to2e"
+                           target="_blank"
+                           rel="noopener">
+                            Read on LinkedIn →
+                        </a>
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3 class="article-title">
+                        Know What Software Not to Build
+                    </h3>
+
+                    <p class="article-description">
+                        Why engineering judgment includes knowing
+                        what should be built, bought, reused or
+                        simply left alone.
+                    </p>
+
+                    <p>
+                        <a href="https://www.linkedin.com/pulse/know-what-software-write-sergio-rodriguez-freire-a7fpe"
+                           target="_blank"
+                           rel="noopener">
+                            Read on LinkedIn →
+                        </a>
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3 class="article-title">
+                        Legacy Code Never Goes Away
+                    </h3>
+
+                    <p class="article-description">
+                        Why successful legacy systems are difficult
+                        to replace and why managing them well is an
+                        important engineering skill.
+                    </p>
+
+                    <p>
+                        <a href="https://www.linkedin.com/in/sergio-rodriguez-freire/recent-activity/articles/"
+                           target="_blank"
+                           rel="noopener">
+                            View on LinkedIn →
+                        </a>
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- ENGINEERING MANAGEMENT -->
+
+        <div class="writing-category">
+
+            <div class="category-title">
+                Engineering Management
+            </div>
+
+            <div class="grid">
+
+                <div class="card">
+
+                    <h3 class="article-title">
+                        The Art of Being a
+                        Software Engineering Manager
+                    </h3>
+
+                    <p class="article-description">
+                        Lessons from real engineering-management
+                        situations, trade-offs and decisions rather
+                        than management theory.
+                    </p>
+
+                    <p>
+                        <a href="https://www.linkedin.com/pulse/art-being-software-engineering-manager-sergio-rodriguez-freire-nawyf"
+                           target="_blank"
+                           rel="noopener">
+                            Read on LinkedIn →
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section>
+
+        <h2>
+            Technology
+        </h2>
+
+        <div class="tags">
+
+            <span class="tag">C++</span>
+            <span class="tag">Java</span>
+            <span class="tag">Scala</span>
+            <span class="tag">C# / .NET</span>
+            <span class="tag">Python</span>
+            <span class="tag">Embedded C</span>
+
+            <span class="tag">Kafka</span>
+            <span class="tag">Flink</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">AWS</span>
+
+            <span class="tag">Distributed Systems</span>
+            <span class="tag">Embedded Systems</span>
+            <span class="tag">Performance Engineering</span>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+        © 2026 Sergio Rodriguez Freire
+    </div>
+
+</footer>
+
+
+</body>
+</html>
